@@ -1,6 +1,0 @@
-{
-  "hk-img": {
-    "prefix": "hk-img",
-    "body": "<img src='<?php echo hk_get_thumb(get_the_id(), 360, 230); ?>'  alt='<?php the_title(); ?>'>"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "hk-sidebar": {
-    "prefix": "hk-sidebar",
-    "body": "<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) : ?><?php endif; ?>",
-  }
-}

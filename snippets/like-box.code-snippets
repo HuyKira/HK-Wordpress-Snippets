@@ -1,6 +1,0 @@
-{
-  "hk-like-box": {
-    "prefix": "hk-like-box",
-    "body": "<div class='fb-page' data-href='<?php echo \\$hk_options[fb]; ?>' data-hide-cover='false' data-show-facepile='true' data-show-posts='false'></div>"
-  }
-}
