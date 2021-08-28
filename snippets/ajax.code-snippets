@@ -1,0 +1,14 @@
+{
+  "hk-ajax": {
+    "prefix": "hk-ajax",
+    "body": [
+      "add_action('wp_ajax_add_Cart_Ahihi', 'add_Cart_Ahihi');",
+      "add_action('wp_ajax_nopriv_add_Cart_Ahihi', 'add_Cart_Ahihi');",
+      "function add_Cart_Ahihi() {",
+        "\\$arr = array('count' => WC()->cart->cart_contents_count);",
+        "echo json_encode(\\$arr);",
+        "die(); $1",
+      "}",
+    ]
+  }
+}

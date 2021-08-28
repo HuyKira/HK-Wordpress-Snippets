@@ -1,0 +1,6 @@
+{
+  "hk-thumb": {
+    "prefix": "hk-thumb",
+    "body": "<img src='<?php echo wp_get_attachment_url( get_post_thumbnail_id(\\$post->ID) );?>' alt='<?php the_title(); ?>' />"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "hk-taxonamy": {
+    "prefix": "hk-taxonamy",
+    "body": [
+			"<?php echo get_term_link(\\$company[0]->slug, 'cong-ty'); ?>",
+			"<?php",
+				"\\$queried_object = get_queried_object();",
+			  "\\$term_id = \\$queried_object->term_id;",
+			"?>",
+		],
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "hk-js-ajax": {
+    "prefix": "hk-js-ajax",
+    "body": [
+      "\\$('#contact-form').submit(function() {",
+          "event.preventDefault();",
+         "\\$('.ajax-return').html('');",
+          "var data = {};",
+          "\\$.each(\\$(this).serializeArray(), function() {",
+            "data[this.name] = this.value;",
+          "});",
+          "\\$.ajax({",
+              "type: 'POST',",
+              "url: Home+'/wp-admin/admin-ajax.php',",
+              "data: {",
+                  "'action' : 'Contact_action', ",
+                  "'data': data",
+              "},",
+              "beforeSend: function () {",
+                "\\$('.load-ajax').show();",
+              "},",
+              "success: function (data) {",
+                  "\\$('#contact-form')[0].reset();",
+                  "\\$('.load-ajax').hide();",
+                  "var rs = JSON.parse(data);",
+                  "if(rs.status == 1){",
+                      "\\$('.ajax-return').html('<p class='blue'>'+rs.data+'</p>');",
+                  "} else {",
+                      "\\$('.ajax-return').html('<p class='red'>'+rs.data+'</p>');",
+                  "}",
+              "},",
+          "});",
+      "});",
+    ]
+  }
+}
