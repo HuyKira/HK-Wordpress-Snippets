@@ -2,7 +2,7 @@
     "name": "hk-wordpress",
     "displayName": "HK Wordpress",
     "description": "Wordpress Snippets by Huy Kira",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.59.0"
     },
@@ -17,10 +17,94 @@
     ],
     "contributes": {
         "snippets": [
-            {
-                "language": "php",
-                "path": "./snippets/snippets.code-snippets"
-            }
-        ]
+			{
+				"language": "blade",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "ejs",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "html",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "handlebars",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "latte",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "php",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "plaintext",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "razor",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "tpl",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "twig",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "vue",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "vue-html",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "django-html",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "jinja-html",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "erb",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "HTML (Eex)",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "volt",
+				"path":"./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "nunjucks",
+				"path":"./snippets/snippets.code-snippets"
+			}
+		]
     }
 }
