@@ -296,5 +296,58 @@
       "add_action ( 'wp_head','jsHeader')"
     ],
     "description": "HK JsHeader"
+  },
+  "HK DB Query": {
+    "prefix": "hk-db-query",
+    "body": [
+      "function get_list_course_by_user(\\$user_id, \\$status){",
+      "  global \\$wpdb;",
+      "  \\$table  = \\$wpdb->prefix . 'users_posts';",
+      "  \\$table_post  = \\$wpdb->prefix . 'posts';",
+      "  \\$sql = \"SELECT `post`.ID FROM \\$table AS user_post ",
+      "  LEFT JOIN \\$table_post AS post ON `user_post`.`makhoahoc` = `post`.`makhoahoc`",
+      "  WHERE `user_post`.`user_id` = %d AND `user_post`.`status` = %d AND `post`.`post_status` = 'publish'\";",
+      "  \\$data = \\$wpdb->get_results(\\$wpdb->prepare(\\$sql, \\$user_id, \\$status), ARRAY_A);",
+      "  if(\\$data){",
+      "    return \\$data;",
+      "  } else {",
+      "    return array();",
+      "  }",
+      "}"
+    ],
+    "description": "HK DB Query"
+  },
+  "HK DB Update": {
+    "prefix": "hk-db-update",
+    "body": [
+      "function init_makhoahoc(\\$postid){",
+      "  \\$data = array(",
+      "    'makhoahoc' => 19",
+      "  );",
+      "  global \\$wpdb;",
+      "  \\$table = \\$wpdb->prefix . 'posts';",
+      "  \\$update = \\$wpdb->update(",
+      "    \\$table,",
+      "    \\$data,",
+      "    array('ID' => \\$postid)",
+      "  );",
+      "}"
+    ],
+    "description": "HK DB Update"
+  },
+  "HK DB Delete": {
+    "prefix": "hk-db-delete",
+    "body": [
+      "function delete_user_course(\\$user_id, \\$course){",
+      "  global \\$wpdb;",
+      "  \\$table = \\$wpdb->prefix . 'users_posts';",
+      "  \\$delete = \\$wpdb->delete(",
+      "    \\$table,",
+      "    array( 'user_id' => \\$user_id, 'makhoahoc' => \\$course),",
+      "    array( '%d', '%s' )",
+      "  );",
+      "}"
+    ],
+    "description": "HK DB Delete"
   }
 }
