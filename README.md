@@ -25,3 +25,4 @@ Wordpress snippets by Huy Kira
 - hk-setup
 - hk-assets
 - hk-jsHeader
+- hk-setup-theme

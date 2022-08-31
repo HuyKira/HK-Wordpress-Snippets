@@ -2,7 +2,7 @@
     "name": "hk-wordpress",
     "displayName": "HK Wordpress",
     "description": "Wordpress Snippets by Huy Kira",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.59.0"
     },
