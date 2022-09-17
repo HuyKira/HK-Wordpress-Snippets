@@ -26,3 +26,8 @@ Wordpress snippets by Huy Kira
 - hk-assets
 - hk-jsHeader
 - hk-setup-theme
+
+## Update 17-09
+- hk-custom-post
+- hk-custom-taxonomy
+- hk-count-views
